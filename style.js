@@ -19,6 +19,20 @@ document.addEventListener("DOMContentLoaded", function(){
         alert ("必須項目が未入力です。入力内容をご確認ください。");
         return;
         }
+    const checkMessage =
+    'この内容で送信しますか？\n\n' +
+    '名前；'  + name + '\n' +
+    '会社名：' + companyName + '\n' +
+    'メール：' + email + '\n' +
+    '年齢：' + age + '\n' +
+    'お問合せ内容：' + '\n' + message;
+
+    const result = confirm(checkMessage);
+
+    if(result === false){
+        event.preventDefault();
+    }
+
     });
     
     const footer = document.querySelector("footer");

@@ -65,12 +65,12 @@ if (empty($message)){
         <div  style="color:red;">
             <ul>
                 <?php foreach ($errors as $error): ?>
-                    <li><?php echo $error; ?>
-                <?php endforeach ?>
+                    <li><?php echo $error; ?></li>
+                <?php endforeach; ?>
             </ul>
         </div>
 
-        <?php endif; ?>
+        <?php else: ?>
 
     <form action="send.php" method="post">
         <input type = "hidden" name = "name" value="<?php echo $name; ?>">
@@ -111,6 +111,7 @@ if (empty($message)){
     <button onclick = "history.back()">戻る</button>
 
         </form>
+        <?php endif; ?>
     </main>
 </div>
 
