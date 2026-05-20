@@ -42,7 +42,7 @@ $result = mail($to, $subject, $body, $headers);
     }
      ?>
      <br>
-<a href='contact.php'">お問合せフォームに戻る</a>
+<a href='contact.php'>お問合せフォームに戻る</a>
 
 </body>
 </html>
